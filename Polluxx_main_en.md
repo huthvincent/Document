@@ -1,5 +1,5 @@
-# OMNY-Twin (Polluxx) Model Architecture Summary
-*A4 Summary: EHR Foundation Model Engineering Architecture*
+# OMNY Time Series Foundation Modeling
+*EHR Foundation Model Engineering Architecture*
 
 ---
 
@@ -16,11 +16,9 @@
 **Topology**: Hybrid Decoder-only | 16 Layers Total | **[M, M, M, A] × 4** Loop
 
 ### Mamba State Space (Backbone 75%)
-- **Mechanism**: $O(n)$ linear time complexity
 - **Function**: Capture cross-month/year longitudinal **long-term temporal dependencies**
 
 ### Attention Mechanism (Local 25%)
-- **Mechanism**: Low-frequency invocation, preventing $O(n^2)$ compute explosion
 - **Function**: Handle complex intra-visit event interactions
 
 ### Sparse MoE (Expert Network)
